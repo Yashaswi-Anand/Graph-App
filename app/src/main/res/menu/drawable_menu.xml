@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        />
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+        <item
+            android:id="@+id/bargraph"
+            android:icon="@drawable/bar"
+            android:title="Bar Chart" />
+
+        <item
+            android:id="@+id/piechart"
+            android:icon="@drawable/pie"
+            android:title="Pie Chart" />
+
+        <item
+            android:id="@+id/radarchart"
+            android:icon="@drawable/radar"
+            android:title="Radar Chart" />
+
+    </group>
+
+
+    <item android:title="Straight line Graph">
+
+        <menu>
+
+
+            <item
+                android:id="@+id/linechart"
+                android:icon="@drawable/line"
+                android:title="Line Chart" />
+
+            <item
+                android:id="@+id/equationChart"
+                android:icon="@drawable/equa_two"
+                android:title="Equation Chart" />
+
+            <item
+                android:id="@+id/scatterChart"
+                android:icon="@drawable/scatter"
+                android:title="Scatter Chart" />
+
+
+
+
+            // finally click Alt+Ctrl+L
+
+        </menu>
+
+    </item>
+
+    <item android:title="Communication">
+
+        <menu>
+
+            <item android:title="Share"
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share"/>
+
+            <item android:title="About"
+                android:id="@+id/about"
+                android:icon="@drawable/about_"/>
+
+
+
+
+
+        </menu>
+    </item>
+
+</menu>
+
+

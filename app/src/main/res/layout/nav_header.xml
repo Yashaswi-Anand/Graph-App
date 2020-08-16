@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:gravity="center"
+    android:background="#DE09A6EF"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="Yash"
+        android:text="Graph"
+        android:textColor="#FFFFFF"
+        android:textSize="75sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12sp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:maxHeight="105dp"
+        android:text=" Yash Anand  "
+        android:textColor="#FFffff"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:maxHeight="105dp"
+        android:text="Motihari  College  Of  Engineering "
+        android:textColor="#03FFE2"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

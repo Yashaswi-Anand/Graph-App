@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAE0E3E8"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="X-axis : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="25sp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/xed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/xed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/xed1"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/xed3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/xed2"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/xed4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/xed3"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/xed5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/xed4"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Y-axis : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="25sp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/yed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/yed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yed1"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/yed3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yed2"
+            android:autofillHints="0"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/yed4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yed3"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/yed5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yed4"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/showResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Show Graph"
+        android:textColor="#A80AEC"
+        android:textStyle="italic|bold" />
+
+    <com.github.mikephil.charting.charts.ScatterChart
+        android:id="@+id/scattergraph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/alertDialods"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About..."
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        android:textColor="#64F405"
+        />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#988080"/>
+
+    <TextView
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Graph app is based on java programming language.\nIt can easily visualize data and information.\nThe primary purpose of graph is to show relationship among variables.In this app,We can see
+                      \nBar Chart,\nPie Chart,\nLine Chart,\nScatter Chart,\nGraphical equations of two lines and etc.\nThis is basic app for information of android graph."
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="#9F76EA"
+        />
+
+</LinearLayout>

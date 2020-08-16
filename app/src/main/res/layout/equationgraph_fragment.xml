@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#EAE0E3E8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/t_ve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Equation 1 : "
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="25sp"
+            android:textStyle="italic|bold" />
+        <EditText
+            android:id="@+id/x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="2"
+            android:hint="0.00"
+            android:layout_toRightOf="@+id/t_ve"
+            android:inputType="numberSigned"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/y1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/x1"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberSigned"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/y1"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberSigned"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/infoimf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_info"
+            android:layout_marginRight="5dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Equation 2 : "
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="25sp"
+            android:textStyle="italic|bold" />
+        <EditText
+            android:id="@+id/x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tve"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberSigned"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/y2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/x2"
+            android:ems="2"
+            android:inputType="numberSigned"
+            android:hint="0.00"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/y2"
+            android:ems="2"
+            android:hint="0.00"
+            android:inputType="numberSigned"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:textSize="20sp"
+        android:hint="  Solution of two straight lines"/>
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Show Graph"
+        android:textColor="#A80AEC"
+        android:textStyle="italic|bold" />
+
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/equlinechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
